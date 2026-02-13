@@ -1,0 +1,124 @@
+/*********** Mobil ***********/
+.main_galleri .grid_1-1-1-1 .grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.main_min_comp li {
+  margin-left: 15px;
+}
+
+/*********** Desktop ***********/
+@media (min-width: 1000px) {
+  /*********** Forside ***********/
+  .main_index section.grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  .main_index .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .main_index .index_image2 {
+    order: -1;
+  }
+
+  /*********** Min comp ***********/
+  .main_min_comp .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /*********** Operativsystemer ***********/
+  .main_operativsystemer .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+  }
+
+  .main_operativsystemer .grid_5-3 .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+  }
+
+  .main_operativsystemer .grid_5-3 .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+  }
+
+  .main_operativsystemer .grid_5-3 .grid_3-2 .order {
+    order: -1;
+  }
+
+  /*********** Komponenter ***********/
+  .main_komponenter .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .main_komponenter .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col img:last-child {
+    margin-top: auto;
+  }
+
+  /*********** Galleri ***********/
+  .main_galleri h1 {
+    font-size: 4rem;
+  }
+
+  .main_galleri img {
+    margin-block: 0rem 0rem;
+  }
+
+  .main_galleri .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .main_galleri .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .main_galleri .gal_img1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .main_galleri .grid_1-1 {
+    grid-column: span 2;
+  }
+
+  .main_galleri .gal_img4 {
+    grid-column: span 2;
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .main_galleri .gal_img5 {
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .main_galleri .gal_img6 {
+    grid-column: span 3;
+    align-self: stretch;
+    object-fit: cover;
+  }
+}
